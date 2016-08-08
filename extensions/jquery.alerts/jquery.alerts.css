@@ -1,0 +1,80 @@
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 14px !important;
+	min-width: 400px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: #FFF;
+	border: 1px solid #000;
+	color: #000;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	text-align: center;
+}
+
+#popup_title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.75em;
+	color: #666;
+	border: solid 1px #FFF;
+	background: rgba(0,0,0,.06);
+	border-bottom: 1px solid rgba(0,0,0,.06);
+	
+	cursor: default;
+	padding: .6em 1.75em;
+	margin: 0em;
+}
+
+input[type=button] {
+	font-size: 14px;
+	background-color: #fff;
+	border: 1px solid #9e9e9e;
+	border-radius: 3px;
+	box-shadow: inset 0px 0px 0px 1px #e9e8e8, 0px 0px 0px 1px #fbfbfa;
+}
+input[type=button]:focus, input[type=button]:active {
+	border: 1px solid #4b6e99;
+	outline: none;
+	box-shadow: inset 0px 0px 0px 1px #c8daef, 0px 0px 0px 1px #fbfbfa;
+}
+input[type=button]:active {
+	position: relative;
+	background: #ddd;
+	top: 1px;
+}
+
+
+
+
+#popup_content {
+	margin: 0em;
+}
+#popup_message {
+	padding: 1em 1.75em 1em 1.75em;
+	overflow-y: auto !important;
+	overflow-x: hidden;
+	max-height: 20em !important;
+}
+#popup_panel {
+	text-align: center;
+	padding: .6em 1.75em;
+	background: rgba(0,0,0,.06);
+	border-top: 1px solid rgba(0,0,0,.06);
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+	background-color: #fff;
+	border: 1px solid #9e9e9e;
+	border-radius: 3px;
+	box-shadow: inset 0px 0px 0px 1px #e9e8e8, 0px 0px 0px 1px #fbfbfa;
+	padding: 0.2em;
+	width: 95%;
+}
+#popup_prompt:focus, #popup_prompt:active {
+	border: 1px solid #4b6e99;
+	outline: none;
+	box-shadow: inset 0px 0px 0px 1px #c8daef, 0px 0px 0px 1px #fbfbfa;
+}
