@@ -35,6 +35,9 @@
 			if(in_array("urlencode", $options)) {
 				$array = self::urlencode($array);
 			}
+			if(in_array("no_js_injection", $options)) {
+				$array = self::no_js_injection($array);
+			}
 	}		
 		
 		public static function htmlspecialchars($array) {
@@ -293,6 +296,15 @@ return $clean_html;
         	} 
         	return $html->save();
         }
+
+		public static function no_js_injection($array) {
+			foreach($array as $key => $item) {
+				$array[$key] = is_array($item)
+				? self::no_js_injection($item)
+				: str_replace(array("<", ">"), array("&lt;", "&gt;"), $item);
+			} 
+			return $array;
+		}
         
        #strippedValue.replace(/<li[^>]*>([\s\S]*?)<\/li>/ig, "* $1\n");
 		

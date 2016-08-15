@@ -445,7 +445,7 @@
 					}
 
                 	$options = array('htmlspecialchars_decode');
-					sanitize::process_array($this->request, $options);	                    
+					Sanitize::process_array($this->request, $options);	                    
 
 					$query = 'UPDATE bookmark_items SET title = :title WHERE id = :id';
                 	$params = array(
@@ -462,7 +462,7 @@
                 	);
                 	$data = DB::get($query, $params);
 
-                	$options = array('htmlspecialchars', 'utf8_decode', 'stripslashes');
+                	$options = array('htmlspecialchars', 'utf8_decode', 'stripslashes', 'no_js_injection');	
 					Sanitize::process_array($data, $options);	                    
                 	
                 	die('1#' . $data[0]['title']);
@@ -531,7 +531,7 @@
 
 					$data = DB::get($query, $params);
 
-                	$options = array('htmlspecialchars_decode', 'utf8_decode', 'stripslashes');
+                	$options = array('htmlspecialchars_decode', 'utf8_decode', 'stripslashes', 'no_js_injection');
 					Sanitize::process_array($data, $options);	                    
 					
 					die($data[0]['title']);

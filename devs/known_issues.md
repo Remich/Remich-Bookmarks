@@ -1,10 +1,5 @@
 ## KNOWN ISSUES
 	* Multi-User Support is not completely tested, USE AT YOUR OWN RISK
-	* URGENT: Make sure that all SQL-Queries get executed with the correct Userhash
-	* URGENT: Mask parameters in filelocations
-		* e.g. in bookmarks.ajax.inc.php in empty_trash...
-	* Fix Javascript Injection by not masking the data before the output
-		only for text input fields, i think
 	* Fix Problem of ' in URLs e.g. Carl's Life
 		* Go doesn't work
 		* Renaming Title doesn't work with AJAX
