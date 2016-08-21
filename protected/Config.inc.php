@@ -11,7 +11,7 @@
 			"dbhost" => "127.0.0.1",
 			"dbname" => "rmis_1144",			// name of the database
 			"dbuser" => "rmis_1144",			// username of the database
-			"dbpass" => "rLswwGtGYp2etuhv",		// password for the database
+			"dbpass" => "",		// password for the database
 			"dbport" => 3306,					// database port
 			
 			"title"  => "Remich Bookmarks",
